@@ -8,10 +8,10 @@ Department.init(
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            // autoIncrement: true
         },
         name: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
         }
     },
     {
@@ -19,8 +19,8 @@ Department.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'department'
-    }
+        modelName: 'department',
+    },
 );
 
 module.exports = Department;

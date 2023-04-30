@@ -8,25 +8,25 @@ Role.init(
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            // autoIncrement: true
         },
         title: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
         },
         salary: {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
         },
         department_id: {
-            type: DataTypes.INTEGER
-        }
+            type: DataTypes.INTEGER,
+        },
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'department'
-    }
+        modelName: 'department',
+    },
 );
 
 module.exports = Role;
