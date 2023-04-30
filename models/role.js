@@ -1,25 +1,22 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Employee extends Model { }
+class Role extends Model { }
 
-Employee.init(
+Role.init(
     {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        first_name: {
+        title: {
             type: DataTypes.STRING
         },
-        last_name: {
-            type: DataTypes.STRING
-        },
-        role_id: {
+        salary: {
             type: DataTypes.INTEGER
         },
-        manager_id: {
+        department_id: {
             type: DataTypes.INTEGER
         }
     },
@@ -28,8 +25,8 @@ Employee.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'employee'
+        modelName: 'department'
     }
 );
 
-module.exports = Employee;
+module.exports = Role;

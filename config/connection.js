@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
-console.log(process.env);
 
 // Create a connection object
 const sequelize = new Sequelize(
