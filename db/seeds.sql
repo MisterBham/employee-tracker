@@ -1,24 +1,24 @@
-INSERT INTO department (id, name)
-VALUES  (001, "Leadership"),
-        (002, "Engineering"),
-        (003, "Sales"),
-        (004, "Finance"),
-        (005, "Human Resources");
+INSERT INTO department (name)
+VALUES  ("Leadership"),
+        ("Engineering"),
+        ("Sales"),
+        ("Finance"),
+        ("Human Resources");
        
-INSERT INTO role (id, title, salary, department_id)
-VALUES (001, "Chief Executive Officer", 212000, 001),
-        (002, "Chief Engineer", 198000, 001),
-        (003, "Sales Manager", 135000, 001),
-        (004, "Chief Financial Officer", 135000, 001),
-        (005, "VP of Human Resources", 100000, 001),
-        (006, "Engineering Lead", 125000, 002),
-        (007, "Engineer", 100000, 002),
-        (008, "Sales Lead", 75000, 003),
-        (009, "Sales Specialist", 65000, 003),
-        (010, "Finance Lead", 75000, 004),
-        (011, "Financial Analyst", 65000, 004),
-        (012, "HR Lead", 75000, 005),
-        (013, "Human Resource Analyst", 65000, 005);
+INSERT INTO role (title, salary, department_id)
+VALUES ("Chief Executive Officer", 212000, 001),
+        ("Chief Engineer", 198000, 001),
+        ("Sales Manager", 135000, 001),
+        ("Chief Financial Officer", 135000, 001),
+        ("VP of Human Resources", 100000, 001),
+        ("Engineering Lead", 125000, 002),
+        ("Engineer", 100000, 002),
+        ("Sales Lead", 75000, 003),
+        ("Sales Specialist", 65000, 003),
+        ("Finance Lead", 75000, 004),
+        ("Financial Analyst", 65000, 004),
+        ("HR Lead", 75000, 005),
+        ("Human Resource Analyst", 65000, 005);
        
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Brad", "Jackson", 001, null),
