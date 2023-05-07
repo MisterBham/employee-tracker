@@ -1,9 +1,9 @@
-INSERT INTO department (id, name)
-VALUES  (001, "Leadership"),
-        (002, "Engineering"),
-        (003, "Sales"),
-        (004, "Finance"),
-        (005, "Human Resources");
+INSERT INTO department (name)
+VALUES  ("Leadership"),
+        ("Engineering"),
+        ("Sales"),
+        ("Finance"),
+        ("Human Resources");
        
 INSERT INTO role (title, salary, department_id)
 VALUES ("Chief Executive Officer", 212000, 001),
