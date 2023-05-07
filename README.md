@@ -1,6 +1,6 @@
 # Employee Tracker
 [![Application Workflow](./images/employee-tracker-screenshot.jpg)](https://drive.google.com/file/d/1Yp9yI14IwEdR1sjy8xPvClruKBo6pxbG/view) <br>
-Click video for application walkthrough using seeded data!
+Click video above for application walkthrough using seeded data!
 
 ## Table of Contents 
 * [Description](#Description) 
